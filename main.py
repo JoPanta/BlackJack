@@ -1,6 +1,6 @@
 import random
 import art
-from clear import clear
+import os
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
@@ -20,11 +20,11 @@ def play():
     pc_score = sum(pc_cards)
     play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if play == "y":
-        clear()
+        os.system('cls')
         print(art.logo)
     if play == "n":
         should_continue = False
-        clear()
+        os.system('cls')
 
 
 def show_cards():
